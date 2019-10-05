@@ -25,7 +25,7 @@ public class Server extends NanoHTTPD {
     private Map<String, Response> responses;
 
     public Server(ReactContext context, int port) {
-        super("localhost", port);
+        super("0.0.0.0", port);
         reactContext = context;
         responses = new HashMap<>();
 
